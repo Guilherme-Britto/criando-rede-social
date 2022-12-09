@@ -8,7 +8,6 @@ body{
     font-family: 'Inter';
     font-size: 1rem;
     color: var(--grey-1);
-    margin: 0;
 }
 
 header{
@@ -206,14 +205,16 @@ h2{
 
 @media (min-width: 769px){
 
-    main{
+    section{
         max-width: 55%;
     }
 
     .sugestUsers__container{
-        position: fixed;
-        right: 2%;
-        top: 178px;
+        position: sticky;
+        width: 320px;
+        top: 100px;
+        left: 100%;
+        margin-top: -350px;
     }
 
     .sugestUsers__list{
@@ -227,10 +228,14 @@ h2{
         flex-direction: row;
         gap: 1rem;
     }
+
+    .post__container{
+        margin-top: 150px;
+    }
 }
 
 @media (min-width: 1024px){
-    main{
+    section{
         max-width: 60%;
     }
 }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <script defer src="./src/scripts/index.js"></script>
+    <script defer src="./src/scripts/posts.js"></script>
+    <script defer src="./src/scripts/sugestUsers.js"></script>
+    <script defer src="./src/scripts/users.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>TechPosters</h1>
+        <button>Sair</button>
+    </header>
+    <main>
+        <section class="createPost__container">
+            <div class="imgInfo">
+                <img src="./src/assets/img/user1.svg" alt="">
+                <div class="user__info">
+                    <h3>Samuel Leão</h3>
+                    <p>Front end Engineer</p>
+                </div>
+            </div>
+            <input class="typepost" id="titlePost" type="text" placeholder="Digitar título do post">
+            <input class="typepost" id="descPost" type="text" placeholder="Digitar descrição do post">
+            <button type="submit">Postar</button>
+        </section>
+        <section class="sugestUsers__container">
+            <h2>Sugestões para você seguir</h2>
+            <div class="sugestUsers__list">
+                <div class="sugestUsers">
+                    <div class="imgInfo">
+                        <img src="./src/assets/img/user3.svg" alt="">
+                        <div class="user__info">
+                            <h3>Carlos Lima</h3>
+                            <p>UX e UI Desginer</p>
+                        </div>
+                    </div>
+                    <button>Seguir</button>
+                </div>
+                <div class="sugestUsers">
+                    <div class="imgInfo">
+                        <img src="./src/assets/img/user6.svg" alt="">
+                        <div class="user__info">
+                            <h3>Larissa Camargo</h3>
+                            <p>UI Developer</p>
+                        </div>
+                    </div>
+                    <button>Seguir</button>
+                </div>
+                <div class="sugestUsers">
+                    <div class="imgInfo">
+                        <img src="./src/assets/img/user7.svg" alt="">
+                        <div class="user__info">
+                            <h3>Filipe Gutierry</h3>
+                            <p>Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <button>Seguir</button>
+                </div>
+            </div>
+        </section>
+        <section class="post__container">
+            <h1>Posts</h1>
+            <div class="post__list">
+                <div class="imgInfo">
+                    <img src="./src/assets/img/user2.svg" alt="">
+                    <div class="user__info">
+                        <h3>Samuel Persuhn</h3>
+                        <p>Front end Engineer</p>
+                    </div>
+                </div>
+                <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+                <p>A Framework Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto. </p>
+                <div class="buttonLike">
+                    <button data-id="2" class="card__button">Abrir Post</button>
+                    <img src="./src/assets/img/Vector.png" alt="like">
+                    <p>25</p>
+                </div>
+            </div>
+            <div class="post__list">
+                <div class="imgInfo">
+                    <img src="./src/assets/img/user4.svg" alt="">
+                    <div class="user__info">
+                        <h3>Carla Maria</h3>
+                        <p>Back end Engineer</p>
+                    </div>
+                </div>
+                <h2>Programa de estágio abre vagas em Segurança da Informação com regime remoto</h2>
+                <p>Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança...</p>
+                <div class="buttonLike">
+                    <button data-id="4" class="card__button">Abrir Post</button>
+                    <img src="./src/assets/img/Vector.png" alt="like">
+                    <p>25</p>
+                </div>
+            </div>
+            <div class="post__list">
+                <div class="imgInfo">
+                    <img src="./src/assets/img/user5.svg" alt="">
+                    <div class="user__info">
+                        <h3>Júlia Martins</h3>
+                        <p>Devop's</p>
+                    </div>
+                </div>
+                <h2>O que é programação orientada a objetos e programação funcional</h2>
+                <p>A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais...</p>
+                <div class="buttonLike">
+                    <button data-id="5" class="card__button">Abrir Post</button>
+                    <img src="./src/assets/img/Vector.png" alt="like">
+                    <p>25</p>
+                </div>
+            </div>
+        </section>
+
+
+<!--         
+        <dialog class="modal__container"></dialog>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+
+img{
+    height: 52px;
+    border-radius: 100%;
+}
+
+body{
+    font-family: 'Inter';
+    font-size: 1rem;
+    color: var(--grey-1);
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+
+    height: 76px;
+
+    background-color: var(--grey-1);
+    color: var(--WhiteFixed);
+    position: sticky;
+    top: 0;
+}
+
+header H1{
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+header button{
+    background-color: var(--grey-1);
+    border: none;
+    color: var(--WhiteFixed);
+}
+
+main{
+    padding: 48px 3%;
+}
+
+.createPost__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+
+    width: auto;
+    margin-bottom: 16px;
+}
+
+.user__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.user__info h3{
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.user__info p{
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--grey-2);
+    margin: 0;
+}
+
+.typepost{
+    max-width: 100%;
+    border-color: var(--grey-4);
+    border-radius: 5px;
+    padding: 12px 20px;
+    border-style: solid;
+    margin-top: 1.5rem;
+}
+
+#descPost{
+    min-height: 8rem;
+}
+
+.createPost__container button{
+    width: 4.5rem;
+    height: 2.4rem;
+    background-color: var(--grey-4);
+    color: var(--grey-3);
+    border: none;
+    margin-top: 1.5rem;
+    margin-left: auto;
+}
+
+h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.sugestUsers__list{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    height: 8.5rem;
+}
+
+.sugestUsers{
+    min-width: 15rem;
+}
+
+.sugestUsers__list button{
+    width: 4.5rem;
+    height: 1.5rem;
+    background-color: var(--WhiteFixed);
+    color: var(--grey-1);
+    border: solid 1px var(--grey-1);
+    margin-top: .2rem;
+    margin-left: auto;
+}
+
+.post__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.post__container h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.post__list h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: .5rem;
+}
+
+.post__list p{
+    font-weight: 400;
+}
+
+.buttonLike{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.buttonLike img{
+    height: 1.5rem;
+    margin-right: .5rem;
+    margin-left: 2rem;
+}
+
+.buttonLike button{
+    width: 4.5rem;
+    height: 2.2rem;
+    background-color: var(--grey-1);
+    color: var(--WhiteFixed);
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.modal__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__div{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--WhiteFixed);
+    margin: 40px 5% auto 5% ;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.modal__div > h2{
+    margin: .5rem 0;
+}
+
+@media (min-width: 769px){
+
+    main{
+        max-width: 55%;
+    }
+
+    .sugestUsers__container{
+        position: fixed;
+        right: 2%;
+        top: 178px;
+    }
+
+    .sugestUsers__list{
+        flex-direction: column;
+        overflow-x: unset;
+    }
+
+    .sugestUsers{
+        min-width: unset;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1024px){
+    main{
+        max-width: 60%;
+    }
+}

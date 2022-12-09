@@ -1,0 +1,26 @@
+/* button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+} */
+
+
+:root{
+    --brand-1: #4263EB;
+    --brand-2: #364FC7;
+
+    --grey-0: #0A0C0D;
+    --grey-1: #212529;
+    --grey-2: #495057;
+    --grey-3: #868E96;
+    --grey-4: #DEE2E6;
+    --grey-5: #F8F9FA;
+    --grey-opacity-1: rgba(33, 37, 41, 0.5);
+    --WhiteFixed: #ffffff;
+
+    --like: #D7443E;
+  }

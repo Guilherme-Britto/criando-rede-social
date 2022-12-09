@@ -15,11 +15,14 @@ function renderModal() {
             modal.appendChild(modalContent)
 
             modal.showModal()
+
+            closeModal()
         })
     }
 }
 
 function createModal(id) {
+
     const modal__div = document.createElement('div')
     const imgInfo = document.createElement('div')
     const img = document.createElement('img')
@@ -28,6 +31,7 @@ function createModal(id) {
     const user__infop = document.createElement('p')
     const h2 = document.createElement('h2')
     const p = document.createElement('p')
+    const closeModal = document.createElement('span')
 
     let elementPost = {}
     let elementUser = {}
@@ -43,8 +47,8 @@ function createModal(id) {
             elementUser = users[i]
         }
     }
-    console.log(elementPost)
-    console.log(elementUser)
+    // console.log(elementPost)
+    // console.log(elementUser)
 
     modal__div.classList.add('modal__div')
     imgInfo.classList.add('imgInfo')
@@ -54,33 +58,24 @@ function createModal(id) {
     user__infop.innerText = elementUser.stack
     h2.innerText = elementPost.title
     p.innerText = elementPost.text
+    closeModal.classList.add("closeModal")
+    closeModal.innerText = "X"
 
     user__info.append(h3, user__infop)
     imgInfo.append(img, user__info)
 
-    modal__div.append(imgInfo, h2, p)
+    modal__div.append(imgInfo, h2, p, closeModal)
 
     return modal__div
 }
 
+function closeModal() {
+    const modal = document.querySelector('.modal__container')
+    const closeBtn = document.querySelector('.closeModal')
+
+    closeBtn.addEventListener('click', () => {
+        modal.close()
+    })
+}
+
 renderModal()
-
-
-
-
-/* <section class="modal__container">
-<div class="modal__div">
-    <div class="imgInfo">
-        <img src="./src/assets/img/user5.svg" alt="">
-        <div class="user__info">
-            <h3>Júlia Martins</h3>
-            <p>Devop's</p>
-        </div>
-    </div>
-
-    <h2>O que é programação orientada a objetos e programação funcional</h2>
-    <p>Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.
-
-    Antes de iniciar a criação de qualquer projeto, busque referências de aplicações que tenham a ver com o nicho que você está desenvolvendo. Por exemplo, quando quero criar um e-commerce de roupas, vou reservar um momento para buscar por aplicações do gênero, tanto acessando ou baixando apps e vendo o que se repete de informações em cada um dos aplicativos e sites referentes a compra de roupas, e também, observar cores que normalmente você enxerga em cada um dos apps.</p>
-</div>
-</section> */
